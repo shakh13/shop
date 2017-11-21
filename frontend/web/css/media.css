@@ -1,0 +1,36 @@
+@media only screen and (max-width: 600px) {
+    .mycard .row .col{
+        padding: 0 .7px;
+    }
+
+    .mycard .card .card-image .card-title{
+        padding: 3px;
+        font-size: 14px;
+    }
+
+    .mycard .btn-floating.halfway-fab{
+        right: 0px;
+        bottom: -22px;
+    }
+    .mycard .card .card-content{
+        padding: 3px;
+    }
+
+    .mycard .card .header{
+        padding: 3px;
+    }
+
+    .mycard .card .card-image .card_center_img img{
+        width: 42px;
+        height: 42px;
+        margin-top: -25px;
+    }
+
+    .mycard .categories > li i{
+        font-size: 24px;
+    }
+
+    h5{
+        font-size: 1.3rem;
+    }
+}
