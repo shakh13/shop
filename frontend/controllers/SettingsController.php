@@ -8,5 +8,4 @@ class SettingsController extends \yii\web\Controller
     {
         return $this->render('index');
     }
-
 }
