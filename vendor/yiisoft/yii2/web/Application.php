@@ -237,4 +237,23 @@ class Application extends \yii\base\Application
             :
             $price * $count;
     }
+
+    public function currency($id){
+        switch ($id){
+            case 0: return 'UZS';
+            case 1: return 'USD';
+            case 2: return 'EUR';
+            default: return 'UZS';
+        }
+    }
+
+    public function language($id){
+        switch ($id){
+            case 0: return 'Русский';
+            case 1: return 'English';
+            case 2: return 'O\'zbekcha';
+            default: return 'Русский';
+
+        }
+    }
 }

@@ -262,8 +262,70 @@ class SiteController extends Controller
     public function actionSettings(){
         $user = Yii::$app->user->identity;
 
-        return $this->render('settings', [
-            'user' => $user,
-        ]);
+        $a = Yii::$app->request->getQueryParam('action');
+
+        $action = 'settings';
+        $c = [];
+
+        switch ($a){
+            case 'delivery_address':
+
+                $action = 'settings_delivery_address';
+                $c = [
+                    'user' => $user,
+                ];
+                break;
+
+            case 'currency':
+                $action = 'settings_currency';
+                $c = [
+                    'user' => $user,
+                ];
+                break;
+
+            case 'language':
+                $action = 'settings_language';
+                $c = [
+                    'user' => $user,
+                ];
+                break;
+
+            case 'preferences':
+                $action = 'settings_preferences';
+                $c = [
+                    'user' => $user,
+                ];
+                break;
+
+            case 'notifications':
+                $action = 'settings_notifications';
+                $c = [
+                    'user' => $user,
+                ];
+                break;
+
+            case 'currency_converter':
+                $action = 'settings_currency_converter';
+                $c = [
+                    'user' => $user,
+                ];
+                break;
+
+            case 'privacy_policy':
+                $action = 'settings_privacy_policy';
+                $c = [
+                    'user' => $user,
+                ];
+                break;
+
+            default:
+                $action = 'settings';
+                $c = [
+                    'user' => $user,
+                ];
+                break;
+        }
+
+        return $this->render($action, $c);
     }
 }
