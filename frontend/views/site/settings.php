@@ -18,7 +18,7 @@ $this->title = "Настройки";
     <h6>Настройки профилья</h6>
 
     <ul class="list">
-        <li>
+        <li class="pad5">
             <?=
                 Html::a(
                     "Адрес доставки: <span class='badge'>".($user->defaultaddress ? $user->defaultaddress->street : 'Неизвестно')."</span>",
@@ -26,8 +26,13 @@ $this->title = "Настройки";
                 )
             ?>
         </li>
-        <li>
-            <?= Html::a('Валюта<span class="badge">'.($user->defaultcurrency ? $user->defaultcurrency->currency : 'UZS').'</span>') ?>
+        <li class="pad5">
+            <?=
+                Html::a("Валюта: <span class='badge'>".($user->profile->currency ? $user->profile->currency : 'UZS')."</span>" , [
+                    '/site/settings',
+                    'action' => 'currency'
+                ])
+            ?>
         </li>
     </ul>
 </div>
