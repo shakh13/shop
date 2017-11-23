@@ -147,7 +147,7 @@ AppAsset::register($this);
                 [
                         'url' => ['/site/supportservice'],
                     'icon' => 'headset_mic',
-                    'content' => 'Обратная связь'
+                    'content' => 'Служба поддержки'
                 ]
 
             ];
