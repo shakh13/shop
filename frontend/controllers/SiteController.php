@@ -258,4 +258,12 @@ class SiteController extends Controller
             'orders' => $orders,
         ]);
     }
+
+    public function actionSettings(){
+        $user = Yii::$app->user->identity;
+
+        return $this->render('settings', [
+            'user' => $user,
+        ]);
+    }
 }

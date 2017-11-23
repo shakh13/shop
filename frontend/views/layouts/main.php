@@ -134,7 +134,7 @@ AppAsset::register($this);
                         'url' => 'divider'
                 ],
                 [
-                        'url' => ['/settings'],
+                        'url' => ['/site/settings'],
                     'icon' => 'settings',
                     'content' => 'Настройки',
                 ],

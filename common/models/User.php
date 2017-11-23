@@ -210,4 +210,8 @@ class User extends ActiveRecord implements IdentityInterface
     public function getFavorites(){
         return $this->hasMany(Favorites::className(), ['user_id' => 'id']);
     }
+
+    public function getDefaultaddress(){
+        return Address::findOne(['user_id' => $this->id, 'status' => 1, 'dflt' => 1]);
+    }
 }
