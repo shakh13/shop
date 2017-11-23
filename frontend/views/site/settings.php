@@ -26,5 +26,8 @@ $this->title = "Настройки";
                 )
             ?>
         </li>
+        <li>
+            <?= Html::a('Валюта<span class="badge">'.($user->defaultcurrency ? $user->defaultcurrency->currency : 'UZS').'</span>') ?>
+        </li>
     </ul>
 </div>

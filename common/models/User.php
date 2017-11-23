@@ -6,6 +6,7 @@ use app\models\Basket;
 use app\models\Cards;
 use app\models\Favorites;
 use app\models\Profile;
+use app\models\UserCurrency;
 use Yii;
 use yii\base\NotSupportedException;
 use yii\behaviors\TimestampBehavior;
