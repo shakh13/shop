@@ -1,6 +1,7 @@
 <?php
 namespace frontend\controllers;
 
+use app\models\Address;
 use app\models\Basket;
 use app\models\ProductPhotos;
 use app\models\Products;
@@ -267,13 +268,56 @@ class SiteController extends Controller
         $action = 'settings';
         $c = [];
 
+        $def_address = Yii::$app->request->post('default_address');
+        if ($def_address) {
+            $check = Address::findOne(['user_id' => $user->id, 'status' => 1, 'id' => $def_address]);
+            if ($check){
+                $check->dflt = 1;
+                $check->save();
+            }
+        }
+
         switch ($a){
             case 'delivery_address':
 
                 $action = 'settings_delivery_address';
+
+                $addresses = Address::find()->where(['user_id' => $user->id, 'status' => 1])->all();
+
                 $c = [
                     'user' => $user,
+                    'addresses' => $addresses,
                 ];
+                break;
+
+            case 'add_address':
+                $action = 'settings_add_address';
+
+                $c = [
+                    'user' => $user
+                ];
+                break;
+
+            case 'delete_address':
+
+                $addr_id = Yii::$app->request->getQueryParam('id');
+
+                if ($addr_id){
+                    $check = Address::findOne(['id' => $addr_id, 'user_id' => $user->id, 'status' => 1]);
+                    if ($check){
+                        $check->status = 0;
+                        $check->save();
+
+                        return $this->redirect(['/site/settings', 'action' => 'delivery_address']);
+                    }
+                }
+                else {
+                    $action = "settings";
+                    $c = [
+                        'user' => $user
+                    ];
+                }
+
                 break;
 
             case 'currency':
