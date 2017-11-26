@@ -15,3 +15,6 @@ $this->title = "Адрес доставки | Настройки";
     <div class="title">Адрес доставки</div>
 </a>
 
+<?= Html::beginForm(['/site/settings', 'action' => 'delivery_address']) ?>
+
+<?= Html::endForm() ?>

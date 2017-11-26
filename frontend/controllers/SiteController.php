@@ -312,10 +312,7 @@ class SiteController extends Controller
                     }
                 }
                 else {
-                    $action = "settings";
-                    $c = [
-                        'user' => $user
-                    ];
+                    return $this->redirect(['/site/settings', 'action' => 'delivery_address']);
                 }
 
                 break;

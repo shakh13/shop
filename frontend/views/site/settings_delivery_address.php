@@ -45,7 +45,11 @@ $this->title = "Адрес доставки | Настройки";
         echo Html::endForm();
     }
     else {
-        echo "no addresses entered";
+        ?>
+            <div class="mc pad5">
+                Нет данных
+            </div>
+        <?php
     }
 ?>
 
