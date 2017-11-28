@@ -52,7 +52,7 @@ class Address extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'user_id' => 'Пользователь',
+            'user_id' => 'Abdu',
             'contact_name' => 'Получатель',
             'phone_number' => 'Номер телефона',
             'street' => 'Улица',
