@@ -6,6 +6,8 @@
  * Time: 20:45
  */
 use yii\helpers\Html;
+use yii\widgets\ActiveForm;
+use yii\helpers\ArrayHelper;
 
 $this->title = "Адрес доставки | Настройки";
 ?>
@@ -15,6 +17,20 @@ $this->title = "Адрес доставки | Настройки";
     <div class="title">Адрес доставки</div>
 </a>
 
-<?= Html::beginForm(['/site/settings', 'action' => 'delivery_address']) ?>
+<div class="mc" style="padding: 15px">
+    <?php
+        $form = ActiveForm::begin(['action' => ['/site/settings', 'action' => 'delivery_address']]);
+        $city = ArrayHelper::map($cities, 'id', 'content');
+    ?>
+        <?= $form->field($model, 'contact_name') ?>
+        <?= $form->field($model, 'phone_number') ?>
+        <?= $form->field($model, 'city_id')->dropDownList($city, ['style' => 'display:block']) ?>
+        <?= $form->field($model, 'street') ?>
+        <?= $form->field($model, 'apartment') ?>
+        <?= $form->field($model, 'postcode') ?>
 
-<?= Html::endForm() ?>
+        <button class="btn">Сохранить</button>
+    <?php
+        ActiveForm::end();
+    ?>
+</div>

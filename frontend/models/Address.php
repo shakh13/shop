@@ -37,7 +37,7 @@ class Address extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['user_id', 'contact_name', 'phone_number', 'street', 'apartment', 'country_id', 'state', 'city_id', 'postcode'], 'required'],
+            [['user_id', 'contact_name', 'phone_number', 'street', 'apartment', 'city_id', 'postcode'], 'required'],
             [['user_id', 'country_id', 'city_id', 'postcode', 'dflt', 'status'], 'integer'],
             [['created_at'], 'safe'],
             [['contact_name', 'street', 'apartment', 'state'], 'string', 'max' => 30],
@@ -52,18 +52,18 @@ class Address extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'user_id' => 'User ID',
-            'contact_name' => 'Contact Name',
-            'phone_number' => 'Phone Number',
-            'street' => 'Street',
-            'apartment' => 'Apartment',
-            'country_id' => 'Country ID',
-            'state' => 'State',
-            'city_id' => 'City ID',
-            'postcode' => 'Postcode',
-            'dflt' => 'Dflt',
-            'status' => 'Status',
-            'created_at' => 'Created At',
+            'user_id' => 'Пользователь',
+            'contact_name' => 'Получатель',
+            'phone_number' => 'Номер телефона',
+            'street' => 'Улица',
+            'apartment' => 'Квартира',
+            'country_id' => 'Страна',
+            'state' => 'Страна',
+            'city_id' => 'Город',
+            'postcode' => 'Почтовый индекс',
+            'dflt' => 'П.У',
+            'status' => 'Статус',
+            'created_at' => 'Добавлено',
         ];
     }
 

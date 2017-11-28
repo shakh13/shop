@@ -3,6 +3,8 @@ namespace frontend\controllers;
 
 use app\models\Address;
 use app\models\Basket;
+use app\models\Cities;
+use app\models\Countries;
 use app\models\ProductPhotos;
 use app\models\Products;
 use app\models\Shopping;
@@ -292,9 +294,13 @@ class SiteController extends Controller
 
             case 'add_address':
                 $action = 'settings_add_address';
+                $model = new Address();
+                $cities = Cities::find()->where(['status' => 1])->orderBy(['content' => SORT_ASC])->all();
 
                 $c = [
-                    'user' => $user
+                    'user' => $user,
+                    'model' => $model,
+                    'cities' => $cities,
                 ];
                 break;
 
