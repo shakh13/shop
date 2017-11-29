@@ -24,7 +24,7 @@ $this->title = "Адрес доставки | Настройки";
     ?>
         <?= $form->field($model, 'contact_name') ?>
         <?= $form->field($model, 'phone_number') ?>
-        <?= $form->field($model, 'city_id')->dropDownList($city, ['style' => 'display:block']) ?>
+        <?= $form->field($model, 'city_id')->dropDownList($city, ['style' => 'display:block; margin: 10px 0']) ?>
         <?= $form->field($model, 'street') ?>
         <?= $form->field($model, 'apartment') ?>
         <?= $form->field($model, 'postcode') ?>

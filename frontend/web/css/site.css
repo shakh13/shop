@@ -469,3 +469,10 @@ span.count{
     width: 36px;
     text-align: center;
 }
+
+div.help-block{
+    font-size: 12px;
+    color: #f00;
+    margin-bottom: 7px;
+    margin-top: -10px;
+}

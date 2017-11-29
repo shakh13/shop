@@ -37,7 +37,7 @@ class Address extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['user_id', 'contact_name', 'phone_number', 'street', 'apartment', 'city_id', 'postcode'], 'required'],
+            [['user_id', 'contact_name', 'street', 'apartment', 'city_id', 'postcode', 'phone_number'], 'required', 'message' => 'Заполните поля'],
             [['user_id', 'country_id', 'city_id', 'postcode', 'dflt', 'status'], 'integer'],
             [['created_at'], 'safe'],
             [['contact_name', 'street', 'apartment', 'state'], 'string', 'max' => 30],
@@ -52,7 +52,7 @@ class Address extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'user_id' => 'Пользовател',
+            'user_id' => 'Пользователь',
             'contact_name' => 'Получатель',
             'phone_number' => 'Номер телефона',
             'street' => 'Улица',
