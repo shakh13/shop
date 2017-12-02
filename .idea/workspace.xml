@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9cf2b7c5-9747-4e2e-9e22-034c1e76d483" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/config/main.php" afterPath="$PROJECT_DIR$/frontend/config/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/views/layouts/main.php" afterPath="$PROJECT_DIR$/frontend/views/layouts/main.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,8 +43,8 @@
       <file leaf-file-name="main.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/config/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="43" column="76" lean-forward="false" selection-start-line="43" selection-start-column="76" selection-end-line="43" selection-end-column="76" />
+            <state relative-caret-position="306">
+              <caret line="33" column="14" lean-forward="true" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -390,7 +387,7 @@
       <workItem from="1512224671339" duration="1308000" />
       <workItem from="1512226238677" duration="605000" />
       <workItem from="1512228684279" duration="145000" />
-      <workItem from="1512229564401" duration="800000" />
+      <workItem from="1512229564401" duration="868000" />
     </task>
     <task id="LOCAL-00001" summary="123">
       <created>1511230114641</created>
@@ -469,11 +466,18 @@
       <option name="project" value="LOCAL" />
       <updated>1511883669518</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Created .htaccess files">
+      <created>1512230415036</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1512230415036</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129864000" />
+    <option name="totallyTimeSpent" value="129932000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -529,7 +533,8 @@
     <MESSAGE value="123" />
     <MESSAGE value="Created settings files" />
     <MESSAGE value="q" />
-    <option name="LAST_COMMIT_MESSAGE" value="q" />
+    <MESSAGE value="Created .htaccess files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created .htaccess files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -845,8 +850,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/config/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="43" column="76" lean-forward="false" selection-start-line="43" selection-start-column="76" selection-end-line="43" selection-end-column="76" />
+        <state relative-caret-position="306">
+          <caret line="33" column="14" lean-forward="true" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
           <folding />
         </state>
       </provider>
