@@ -476,3 +476,12 @@ div.help-block{
     margin-bottom: 7px;
     margin-top: -10px;
 }
+
+#phone > .intl-tel-input{
+    display: block;
+}
+
+#phone > .help-block{
+    margin-top: 7px;
+}
+

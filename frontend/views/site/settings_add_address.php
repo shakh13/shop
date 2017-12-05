@@ -11,7 +11,6 @@ use yii\helpers\ArrayHelper;
 
 $this->title = "Адрес доставки | Настройки";
 ?>
-
 <a href="<?= Yii::$app->urlManager->createUrl(['/site/settings', 'action' => 'delivery_address']) ?>" class="canback z-depth-1">
     <i class='material-icons'>chevron_left</i>
     <div class="title">Адрес доставки</div>
@@ -23,7 +22,11 @@ $this->title = "Адрес доставки | Настройки";
         $city = ArrayHelper::map($cities, 'id', 'content');
     ?>
         <?= $form->field($model, 'contact_name') ?>
-        <?= $form->field($model, 'phone_number') ?>
+        <?= $form->field($model, 'phone_number', ['options' => ['id' => 'phone']])->widget(\common\validators\PhoneInput::className(), [
+                'jsOptions' => [
+                        'preferredCountries' => ['uz']
+                ]
+        ]) ?>
         <?= $form->field($model, 'city_id')->dropDownList($city, ['style' => 'display:block; margin: 10px 0']) ?>
         <?= $form->field($model, 'street') ?>
         <?= $form->field($model, 'apartment') ?>

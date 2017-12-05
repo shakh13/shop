@@ -79,6 +79,7 @@ AppAsset::register($this);
             ?>
         </div>
     </div>
+
     <?php
         if (!Yii::$app->user->isGuest){
             ?>

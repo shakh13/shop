@@ -42,6 +42,7 @@ class Address extends \yii\db\ActiveRecord
             [['created_at'], 'safe'],
             [['contact_name', 'street', 'apartment', 'state'], 'string', 'max' => 30],
             [['phone_number'], 'string', 'max' => 15],
+            [['phone_number'], \common\validators\PhoneInputValidator::className()],
         ];
     }
 

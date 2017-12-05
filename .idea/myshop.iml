@@ -3,6 +3,7 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/vendor/behat/gherkin" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/borales/yii2-phone-input-master" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/bower-asset/bootstrap" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/bower-asset/jquery" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/bower-asset/jquery.inputmask" />
@@ -10,6 +11,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/bower-asset/typeahead.js" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/bower-asset/yii2-pjax" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/bower/bootstrap" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/bower/intl-tel-input" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/bower/jquery" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/bower/jquery.inputmask" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/bower/punycode" />
@@ -81,6 +83,7 @@
       <library name="PHP" type="php">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/behat/gherkin" />
+          <root url="file://$MODULE_DIR$/vendor/borales/yii2-phone-input-master" />
           <root url="file://$MODULE_DIR$/vendor/bower-asset/bootstrap" />
           <root url="file://$MODULE_DIR$/vendor/bower-asset/jquery" />
           <root url="file://$MODULE_DIR$/vendor/bower-asset/jquery.inputmask" />
@@ -88,6 +91,7 @@
           <root url="file://$MODULE_DIR$/vendor/bower-asset/typeahead.js" />
           <root url="file://$MODULE_DIR$/vendor/bower-asset/yii2-pjax" />
           <root url="file://$MODULE_DIR$/vendor/bower/bootstrap" />
+          <root url="file://$MODULE_DIR$/vendor/bower/intl-tel-input" />
           <root url="file://$MODULE_DIR$/vendor/bower/jquery" />
           <root url="file://$MODULE_DIR$/vendor/bower/jquery.inputmask" />
           <root url="file://$MODULE_DIR$/vendor/bower/punycode" />
@@ -155,6 +159,7 @@
         </CLASSES>
         <SOURCES>
           <root url="file://$MODULE_DIR$/vendor/behat/gherkin" />
+          <root url="file://$MODULE_DIR$/vendor/borales/yii2-phone-input-master" />
           <root url="file://$MODULE_DIR$/vendor/bower-asset/bootstrap" />
           <root url="file://$MODULE_DIR$/vendor/bower-asset/jquery" />
           <root url="file://$MODULE_DIR$/vendor/bower-asset/jquery.inputmask" />
@@ -162,6 +167,7 @@
           <root url="file://$MODULE_DIR$/vendor/bower-asset/typeahead.js" />
           <root url="file://$MODULE_DIR$/vendor/bower-asset/yii2-pjax" />
           <root url="file://$MODULE_DIR$/vendor/bower/bootstrap" />
+          <root url="file://$MODULE_DIR$/vendor/bower/intl-tel-input" />
           <root url="file://$MODULE_DIR$/vendor/bower/jquery" />
           <root url="file://$MODULE_DIR$/vendor/bower/jquery.inputmask" />
           <root url="file://$MODULE_DIR$/vendor/bower/punycode" />
